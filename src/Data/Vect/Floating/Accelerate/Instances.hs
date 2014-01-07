@@ -7,6 +7,7 @@
 {-# LANGUAGE UndecidableInstances #-}
 
 {-|
+
 This module exports vect-floating instances to make Vec2, Normal2, Vec3, Normal3, Vec4, Normal4, Quaternion, and UnitQuaternion
 compatible with accelerate.
 
@@ -22,17 +23,17 @@ Vec2 Accelerate Instances:
 
   * @instance (Elt a) => Unlift Exp (Vec2 (Exp a))@
 
-Normal2 Accelerate Instances
+Normal2 Accelerate Instances:
 
-  * @instance (Elt a, Floating a) => Elt (Normal2 a)
+  * @instance (Elt a, Floating a) => Elt (Normal2 a)@
 
-  * @instance Floating a => IsTuple (Normal2 a)
+  * @instance Floating a => IsTuple (Normal2 a)@
 
   * @instance (Lift Exp a, Elt (Plain a), Floating a, Floating (Plain a)) => Lift Exp (Normal2 a)@
 
   * @instance (Elt a, Floating a, IsFloating a) => Unlift Exp (Normal2 (Exp a))@
 
-Vec3 Accelerate Instances
+Vec3 Accelerate Instances:
 
  * @instance Elt a => Elt (Vec3 a)@
 
@@ -42,7 +43,7 @@ Vec3 Accelerate Instances
 
  * @instance Elt a => Unlift Exp (Vec3 (Exp a))@
 
-Normal3 Accelerate Instances
+Normal3 Accelerate Instances:
 
  * @instance (Elt a, Floating a) => Elt (Normal3 a)@
 
@@ -52,7 +53,7 @@ Normal3 Accelerate Instances
 
  * @instance (Elt a, Floating a, IsFloating a) => Unlift Exp (Normal3 (Exp a))@
 
-Vec4 Accelerate Instances
+Vec4 Accelerate Instances:
 
  * @instance Elt a => Elt (Vec4 a)@
 
@@ -62,7 +63,7 @@ Vec4 Accelerate Instances
 
  * @instance Elt a => Unlift Exp (Vec4 (Exp a))@
 
-Normal4 Accelerate Instances
+Normal4 Accelerate Instances:
 
  * @instance (Elt a, Floating a) => Elt (Normal4 a)@
 
@@ -72,7 +73,7 @@ Normal4 Accelerate Instances
 
  * @instance (Elt a, Floating a, IsFloating a) => Unlift Exp (Normal4 (Exp a))@
 
-Quaternion Accelerate Instances
+Quaternion Accelerate Instances:
  
  * @instance Elt a => Elt (Quaternion a)@
 
@@ -82,7 +83,7 @@ Quaternion Accelerate Instances
 
  * @instance Elt a => Unlift Exp (Quaternion (Exp a))@
 
-UnitQuaternion Accelerate Instances
+UnitQuaternion Accelerate Instances:
 
  * @instance (Elt a, Floating a) => Elt (UnitQuaternion a)@
 
@@ -91,6 +92,7 @@ UnitQuaternion Accelerate Instances
  * @instance (Lift Exp a, Elt (Plain a), Floating a, Floating (Plain a)) => Lift Exp (UnitQuaternion a)@
 
  * @instance (Elt a, IsFloating a) => Unlift Exp (UnitQuaternion (Exp a))@
+
 -}
 
 module Data.Vect.Floating.Accelerate.Instances () where

@@ -2,7 +2,7 @@
 -- further documentation, see http://haskell.org/cabal/users-guide/
 
 name:                vect-floating-accelerate
-version:             0.1.0.1
+version:             0.1.0.2
 synopsis:            Accelerate instances for vect-floating types
 description:         Provides accelerate compatibility of vect-floating <http://hackage.haskell.org/package/vect-floating>. 
 		     Includes Vec2, Normal2, Vec3, Normal3, Vec4, Normal4, Quaternion and UnitQuaternion. 
