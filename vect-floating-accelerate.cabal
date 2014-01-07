@@ -12,7 +12,7 @@ license-file:        LICENSE
 author:              Charles Durham
 maintainer:          Charles Durham <cpdurham@gmail.com>
 copyright:           (c) 2014 Charles Durham
-category:            Graphics
+category:            Math
 build-type:          Simple
 cabal-version:       >=1.8
 
